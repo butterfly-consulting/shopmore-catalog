@@ -77,3 +77,5 @@ echo $PYENV_VERSION >.python-version
 echo $SHOPMORE_VERSION >.shopmore-version
 cp .shopmore-version $BIN/.shopmore-version
 
+cd web
+npm install
