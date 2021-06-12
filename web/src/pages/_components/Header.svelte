@@ -1,24 +1,19 @@
 <script>
-    import { text } from "svelte/internal";
-import { Col } from "sveltestrap";
-    import { Icon } from "sveltestrap";
-    import {
-        Button,
-        ButtonDropdown,
-        Dropdown,
-        DropdownItem,
-        DropdownMenu,
-        DropdownToggle,
-        Collapse,
-        Navbar,
-        NavbarToggler,
-        NavbarBrand,
-        Nav,
-        NavItem,
-        NavLink,
-    } from "sveltestrap";
-
-  
+  import {
+    Button,
+    Dropdown,
+    DropdownItem,
+    DropdownMenu,
+    DropdownToggle,
+    Collapse,
+    Icon,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+  } from "sveltestrap";
 
   let isOpen = false;
 
@@ -29,18 +24,14 @@ import { Col } from "sveltestrap";
 
 <Navbar color="navbar navbar-light bg-light" light expand="md">
   <NavbarBrand href="/">ShopMore <Icon name="cloud" /></NavbarBrand>
-  
   <NavbarToggler on:click={() => (isOpen = !isOpen)} />
   <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
     <Nav class="ms-auto" navbar>
       <NavItem>
-      <form>
-      <input type="text" size="40">
-      <Button secondary>Search</Button>
-      </form>
-      </NavItem>
-      <NavItem>
-        <NavLink href="/hello"><Icon name="telephone" /></NavLink>
+        <form>
+          <input type="text" size="40" />
+          <Button secondary>Search</Button>
+        </form>
       </NavItem>
       <NavItem>
         <NavLink href="#login/"><Icon name="person" /></NavLink>
@@ -60,4 +51,3 @@ import { Col } from "sveltestrap";
     </Nav>
   </Collapse>
 </Navbar>
-
