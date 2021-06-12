@@ -34,7 +34,7 @@
         </form>
       </NavItem>
       <NavItem>
-        <NavLink href="/hello">Hello</NavLink>
+        <NavLink href="/hello"><Icon name="telephone" /></NavLink>
       </NavItem>
       <NavItem>
         <NavLink href="#login/"><Icon name="person" /></NavLink>
