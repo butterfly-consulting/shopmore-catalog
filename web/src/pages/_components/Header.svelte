@@ -34,6 +34,9 @@
         </form>
       </NavItem>
       <NavItem>
+        <NavLink href="/hello">Hello</NavLink>
+      </NavItem>
+      <NavItem>
         <NavLink href="#login/"><Icon name="person" /></NavLink>
       </NavItem>
       <NavItem>
